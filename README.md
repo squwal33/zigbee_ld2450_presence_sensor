@@ -17,6 +17,8 @@ The system also includes a BH1750 light sensor to measure ambient light levels.
 - USB cable for programming and power
 - 5V power supply (optional for standalone operation)
 
+![ESP32-C6](/img/esp32-c6_devkit.png)
+
 ### Wiring Instructions
 
 #### LD2450 Sensor Connection
@@ -63,6 +65,21 @@ Once paired with your Zigbee network, the device will automatically be discovere
 - Target position (X, Y coordinates)
 - Movement speed
 - Light level (if BH1750 is connected)
+- A switch to turn on the development board LED
+
+![Z2M Entities](/img/z2m_presence_entities.jpg)
+
+
+### Home Assistant Display
+A sample card is provided in the lovelace_card/plotly_location.yaml file.
+You need to rename the sensor name in the file according to your configuration.
+
+This allows you to visualize the position of targets in your space like this:
+![Card Image](/img/location.png)
+
+This example card requires the following cards:
+- Vertical Stack In Card
+- Plotly Graph Card
 
 ### Troubleshooting
 
@@ -139,7 +156,6 @@ Une fois associé au réseau Zigbee, l'appareil devrait automatiquement remonter
 - Un interrupteur pour allumer la LED de la carte de développement
 
 ![Entités Z2M](/img/z2m_presence_entities.jpg)
-
 
 
 ### Affichage dans Home Assistant
