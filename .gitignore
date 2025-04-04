@@ -1,0 +1,28 @@
+# Build files
+build/
+managed_components/
+
+# IDE files
+.vscode/
+.idea/
+
+# ESP-IDF specific
+sdkconfig.old
+sdkconfig.ci
+dependencies.lock
+
+# Compiled files
+*.o
+*.d
+*.a
+*.bin
+*.elf
+*.map
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+.DS_Store
