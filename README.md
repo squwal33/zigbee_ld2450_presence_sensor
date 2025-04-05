@@ -8,6 +8,8 @@ This project implements a Zigbee presence sensor using the LD2450 mmWave radar s
 
 The system also includes a BH1750 light sensor to measure ambient light levels.
 
+---
+
 ### Required Hardware
 
 - ESP32-C6 development board
@@ -18,6 +20,8 @@ The system also includes a BH1750 light sensor to measure ambient light levels.
 - 5V power supply (optional for standalone operation)
 
 ![ESP32-C6](/img/esp32-c6_devkit.png)
+
+---
 
 ### Wiring Instructions
 
@@ -37,6 +41,8 @@ The system also includes a BH1750 light sensor to measure ambient light levels.
 - Connect BH1750 VCC to 5V
 - Connect BH1750 GND to GND
 
+---
+
 ### Software Setup
 
 #### Prerequisites
@@ -54,7 +60,8 @@ The system also includes a BH1750 light sensor to measure ambient light levels.
 
 3. Configure, build, and flash the project using the "Build, Flash and Monitor" button in the ESP-IDF extension.
 
-4. After flashing, the device will start in Zigbee pairing mode.
+
+---
 
 ### Home Assistant Integration
 
@@ -74,6 +81,8 @@ Once paired with your Zigbee network, the device will automatically be discovere
 ![Z2M Entities](/img/z2m_presence_entities.jpg)
 
 
+---
+
 ### Home Assistant Display
 A sample card is provided in the lovelace_card/plotly_location.yaml file.
 You need to rename the sensor name in the file according to your configuration.
@@ -85,6 +94,8 @@ This example card requires the following cards:
 - Vertical Stack In Card
 - Plotly Graph Card
 
+---
+
 ### Troubleshooting
 
 - If the device doesn't appear in Home Assistant, ensure your Zigbee coordinator is in pairing mode.
@@ -93,15 +104,27 @@ This example card requires the following cards:
 - Verify the wiring connections between the ESP32-C6 and the sensors.
 - Check the Zigbee2MQTT logs to confirm that the external converter is properly loaded.
 
+## Additional Resources
+
+- [Detailed Project Build Log](https://blog.squwal.com) - Visit my blog for a detailed explanation of this project's development process, challenges, and solutions.
+
+---
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
+
 ---
 
 ## Français
 
 ### Introduction
 
-Ce projet implémente un capteur de présence Zigbee utilisant le capteur radar mmWave LD2450 et un microcontrôleur ESP32-C6. Le capteur peut détecter la présence humaine, les mouvements et la position dans une pièce de 3 personnes. Il s'intègre à Home Assistant à l'aide de Zigbee2MQTT, fournissant une détection de présence vos scénarios de domotique.
+Ce projet implémente un capteur de présence Zigbee utilisant le capteur radar mmWave LD2450 et un microcontrôleur ESP32-C6. Le capteur peut détecter la présence humaine, les mouvements et la position dans une pièce de 3 personnes. Il s'intègre à Home Assistant à l'aide de Zigbee2MQTT, fournissant une détection de présence pour vos scénarios de domotique.
 
 Le système inclut également un capteur de luminosité BH1750 pour mesurer les niveaux de lumière ambiante.
+
+---
 
 ### Matériel Nécessaire
 
@@ -113,6 +136,8 @@ Le système inclut également un capteur de luminosité BH1750 pour mesurer les 
 - Alimentation 5V (optionnelle pour un fonctionnement autonome)
 
 ![ESP32-C6](/img/esp32-c6_devkit.png)
+
+---
 
 ### Instructions de Branchement
 
@@ -132,6 +157,8 @@ Le système inclut également un capteur de luminosité BH1750 pour mesurer les 
 - Connectez BH1750 VCC à 5V
 - Connectez BH1750 GND à GND
 
+---
+
 ### Configuration Logicielle
 
 #### Prérequis
@@ -150,6 +177,8 @@ Le système inclut également un capteur de luminosité BH1750 pour mesurer les 
 3. Configurez, compilez et flashez le projet en utilisant le bouton "Build, Flash and Monitor" dans l'extension ESP-IDF.
 
 
+---
+
 ### Intégration avec Home Assistant
 
 Copiez le fichier zigbee2mqtt_config/squwalinc_esp32c6.js dans le dossier de configuration de votre instance de Zigbee2MQTT à l'emplacement suivant : /homeassistant/zigbee2mqtt/external_converters/squwalinc_esp32c6.js
@@ -166,6 +195,8 @@ Une fois associé au réseau Zigbee, l'appareil devrait automatiquement remonter
 ![Entités Z2M](/img/z2m_presence_entities.jpg)
 
 
+---
+
 ### Affichage dans Home Assistant
 Une carte d'exemple est fournie dans le fichier lovelace_card/plotly_location.yaml
 Vous devez renommer le nom du sensor dans le fichier en fonction de votre configuration.
@@ -177,6 +208,8 @@ Cette carte d'exemple nécessite les cartes suivantes :
 - Vertical Stack In Card
 - Plotly Graph Card
 
+---
+
 ### Dépannage
 
 - Si l'appareil n'apparaît pas dans Home Assistant, assurez-vous que votre coordinateur Zigbee est en mode d'appairage.
@@ -187,6 +220,12 @@ Cette carte d'exemple nécessite les cartes suivantes :
 
 ---
 
-## License
+## Ressources Additionnelles
 
-This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
+- [Journal détaillé du projet](https://blog.squwal.com) - Visitez mon blog pour une explication détaillée du processus de développement de ce projet, des défis rencontrés et des solutions apportées.
+
+---
+
+## Licence
+
+Ce projet est sous licence GNU General Public License v3.0 - consultez le fichier LICENSE pour plus de détails.
