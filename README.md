@@ -27,6 +27,10 @@ The system also includes a BH1750 light sensor to measure ambient light levels.
 - Connect LD2450 VCC to 5V
 - Connect LD2450 GND to GND
 
+**Important**: Pay attention to the orientation of the LD2450 sensor when mounting it:
+
+![LD2450 Orientation](/img/ld2450_orientation.jpg)
+
 #### BH1750 Light Sensor Connection (Optional)
 - Connect BH1750 SDA to ESP32-C6 GPIO6
 - Connect BH1750 SCL to ESP32-C6 GPIO7
@@ -117,6 +121,10 @@ Le système inclut également un capteur de luminosité BH1750 pour mesurer les 
 - Connectez LD2450 RX à ESP32-C6 GPIO5 (UART_TX)
 - Connectez LD2450 VCC à 5V
 - Connectez LD2450 GND à GND
+
+**Important**: Faites attention à l'orientation du capteur LD2450 lors de son installation :
+
+![Orientation LD2450](/img/ld2450_orientation.jpg)
 
 #### Connexion du Capteur de Lumière BH1750 (Optionnel)
 - Connectez BH1750 SDA à ESP32-C6 GPIO6
